@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background: rgb(21, 199, 243);
+}
+
+/* Register */
+.register-wrapper {
+  height: 650px;
+  position: relative;
+}
+
+.wrapper {
+  width: 900px;
+  margin: 0 !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.hero-wrapper {
+  background: rgb(2, 132, 253);
+}
+
+.heading {
+  font-size: 1.2rem;
+}
+
+.hero-img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  opacity: 0.6;
+  border-radius: 10px;
+}
+
+.form-wrapper {
+  background: white;
+}
+
+.form-wrapper h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.submit-btn {
+  background: rgb(2, 132, 253);
+}
+
+label {
+  font-size: 0.9rem !important;
+}
