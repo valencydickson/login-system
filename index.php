@@ -5,7 +5,7 @@ require_once "partial/header.php";
 <div class="register-wrapper">
 
     <div class="hero-wrapper">
-        <h1 class="heading"><span><i class="fas fa-sign-in-alt"></i></span>Login System</h1>
+        <h1 class="heading"><a href=""><span><i class="fas fa-sign-in-alt"></i></span>Login System</a></h1>
         <div>
             <p>Welcome to a PHP login system</p>
             <img src="images/register.webp" alt="register image" class="hero-img">
@@ -27,14 +27,11 @@ require_once "partial/header.php";
 
                 <div>
                     <div class="form-group">
-                        <label for="fname">First Name</label>
+                        <label for="fname">Full Name</label>
                         <input type="text" class="form-control" name="fname">
                     </div>
 
-                    <div class="form-group">
-                        <label for="fname">Last Name</label>
-                        <input type="text" class="form-control" name="lname">
-                    </div>
+
 
                     <div class="form-group">
                         <label for="pwd">Username</label>

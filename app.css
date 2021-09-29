@@ -9,6 +9,10 @@ body {
   background: rgb(21, 199, 243);
 }
 
+a {
+  text-decoration: none !important;
+}
+
 /* REGISTER */
 
 .register-wrapper {
@@ -25,6 +29,10 @@ body {
 .heading {
   font-size: 1.5rem;
   margin-bottom: 1em;
+}
+
+.heading a {
+  color: white;
 }
 
 .heading span {
@@ -127,4 +135,43 @@ label {
 
 .hero-img-login {
   width: 300px;
+}
+
+/* WELCOME */
+
+.welcome-wrapper {
+  text-align: center;
+  color: white;
+}
+
+.welcome-hero {
+  padding: 9em 0;
+  background-image: url("images/welcome.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro {
+  padding: 2em 0.5em;
+}
+
+.intro h1 {
+  font-size: 1.3rem;
+  margin-bottom: 2em;
+}
+
+.btn-logout {
+  margin-top: 1em;
+  background: rgb(2, 132, 253);
+}
+
+.btn-logout a {
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .welcome-hero {
+    padding: 12em 0;
+  }
 }
