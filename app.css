@@ -34,7 +34,20 @@ body {
 .hero-img {
   width: 250px;
   border-radius: 10px;
-  opacity: 0.6;
+}
+
+.links {
+  font-size: 1.2rem;
+  margin-top: 2em;
+}
+
+.links a {
+  padding: 0 0.5em;
+  color: white;
+}
+
+.links a:hover {
+  color: rgb(21, 199, 243);
 }
 
 .form-wrapper {
@@ -92,6 +105,10 @@ label {
     object-fit: cover;
   }
 
+  .links {
+    text-align: center;
+  }
+
   .form-wrapper {
     width: 600px;
     padding: 3em 4em 1em;
@@ -104,4 +121,10 @@ label {
   .form-wrapper p {
     text-align: left;
   }
+}
+
+/* LOGIN */
+
+.hero-img-login {
+  width: 300px;
 }
