@@ -1,5 +1,6 @@
 <?php
 require_once "partial/header.php";
+require_once "controllers/register.php"
 ?>
 
 <div class="register-wrapper">
@@ -22,36 +23,37 @@ require_once "partial/header.php";
     <div class="form-wrapper">
         <h3>Register</h3>
         <p>Please fill the form below to register.</p>
+        <span class="error"><?php echo ($error) ? $error : ""  ?></span>
         <div>
-            <form action="<?php echo htmlspecialchars('controllers/register.php') ?>" method="post" autocomplete="off">
+            <form action="<?php echo htmlspecialchars('controllers/register.php') ?>" method="post">
 
                 <div>
                     <div class="form-group">
                         <label for="fname">Full Name</label>
-                        <input type="text" class="form-control" name="fname">
+                        <input type="text" class="form-control" name="fname" required>
                     </div>
 
 
 
                     <div class="form-group">
                         <label for="pwd">Username</label>
-                        <input type="text" class="form-control" name="username">
+                        <input type="text" class="form-control" name="username" required>
                     </div>
 
                     <div class="form-group">
                         <label for="pwd">Email</label>
-                        <input type="email" class="form-control" name="email">
+                        <input type="email" class="form-control" name="email" required>
                     </div>
 
 
                     <div class="form-group">
                         <label for="pwd">Password</label>
-                        <input type="password" class="form-control" name="pwd">
+                        <input type="password" class="form-control" name="password" required>
                     </div>
 
                     <div class="form-group">
                         <label for="pwd">Repeat Password</label>
-                        <input type="password" class="form-control" name="repeatPwd">
+                        <input type="password" class="form-control" name="repeatPassword" required>
                     </div>
 
                 </div>
