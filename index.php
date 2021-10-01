@@ -6,15 +6,15 @@ require_once "controllers/register.php"
 <div class="register-wrapper">
 
     <div class="hero-wrapper">
-        <h1 class="heading"><a href=""><span><i class="fas fa-sign-in-alt"></i></span>Login System</a></h1>
+        <h1 class="heading"><a href="./"><span><i class="fas fa-sign-in-alt"></i></span>Login System</a></h1>
         <div>
             <p>Welcome to a PHP login system</p>
             <img src="images/register.webp" alt="register image" class="hero-img">
         </div>
         <div class="links">
-            <a href=""><i class="fas fa-blog"></i></a>
-            <a href=""><i class="fab fa-github"></i></a>
-            <a href=""><i class="fab fa-linkedin"></i></a>
+            <a href="https://valencydickson.xyz/" target="_blank"><i class="fas fa-blog"></i></a>
+            <a href="https://github.com/valencydickson" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/valency-dickson-0a7754125/" target="_blank"><i class="fab fa-linkedin"></i></a>
 
         </div>
     </div>
@@ -23,7 +23,7 @@ require_once "controllers/register.php"
     <div class="form-wrapper">
         <h3>Register</h3>
         <p>Please fill the form below to register.</p>
-        <span class="error"><?php echo ($error) ? $error : ""  ?></span>
+        <span class="error"><?php echo (isset($_GET["error"])) ? htmlspecialchars($_GET["error"]) : "" ?></span>
         <div>
             <form action="<?php echo htmlspecialchars('controllers/register.php') ?>" method="post">
 

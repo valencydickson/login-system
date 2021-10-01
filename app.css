@@ -70,9 +70,19 @@ a {
   text-align: center;
 }
 
+.form-wrapper h3 span {
+  color: rgb(2, 132, 253);
+}
+
 .form-wrapper p {
   text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+}
+
+.error {
+  color: red;
+  display: inline-block;
+  margin-bottom: 0.7em;
 }
 
 label {
@@ -174,4 +184,17 @@ label {
   .welcome-hero {
     padding: 12em 0;
   }
+}
+
+/* PROFILE */
+
+.intro h1,
+.intro p {
+  letter-spacing: 2px;
+}
+
+.intro span {
+  color: rgb(12, 41, 68);
+  font-weight: 600;
+  letter-spacing: 5px;
 }

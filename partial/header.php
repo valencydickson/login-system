@@ -1,3 +1,9 @@
+<?php
+
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +15,7 @@
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Raleway&display=swap" rel="stylesheet">
 
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/51416ae4aa.js" crossorigin="anonymous"></script>

@@ -1,5 +1,6 @@
 <?php
 require_once "partial/header.php";
+
 ?>
 
 <div class="register-wrapper">
@@ -20,20 +21,23 @@ require_once "partial/header.php";
 
 
     <div class="form-wrapper">
-        <h3>Login</h3>
+
+        <h3>Thank you for registering to our Login System !!!</h3>
         <p>Please Login to your account.</p>
+        <span class="error"><?php echo (isset($_GET["error"])) ? htmlspecialchars($_GET["error"]) : "" ?></span>
         <div>
-            <form action="<?php echo htmlspecialchars('controllers/login.php') ?>" method="post" autocomplete="off">
+            <form action="<?php echo htmlspecialchars('controllers/login.php') ?>" method="post">
 
                 <div>
                     <div class="form-group">
-                        <label for="pwd">Username</label>
-                        <input type="text" class="form-control" name="username" placeholder="Username or Email" autocomplete="false" autocomplete="false">
+                        <label for="pwd">Username or Email</label>
+
+                        <input type="text" class="form-control" name="username" required>
                     </div>
 
                     <div class="form-group">
                         <label for="pwd">Password</label>
-                        <input type="password" class="form-control" name="pwd">
+                        <input type="password" class="form-control" name="password" required>
                     </div>
                     <div class="form-group form-check">
                         <label class="form-check-label">
