@@ -49,7 +49,7 @@ require_once "../partial/header.php";
 
                 <button type="submit" class="btn btn-primary submit-btn">Login</button>
             </form>
-            <p class="form-footer">Don't have an account yet? <span><a href="index.php">Register now</a></span></p>
+            <p class="form-footer">Don't have an account yet? <span><a href="./">Register now</a></span></p>
         </div>
     </div>
 </main>
