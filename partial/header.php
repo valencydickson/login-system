@@ -34,7 +34,7 @@ session_start();
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="app.css?v=<?php echo time(); ?> "> <!-- force css file to reload -->
 </head>
 
 <body>

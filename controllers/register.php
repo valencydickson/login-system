@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($password !== $repeatPassword) {
         $error = "Please match the password";
-        header("location:../?error=$error");
+        header("location:../public/?error=$error");
     };
 
 
@@ -43,10 +43,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($userHandler->rowCount() > 0) {
         $error = "Username already exist";
-        header("location:../?error=$error");
+        header("location:../public/?error=$error");
     } else if ($emailHandler->rowCount() > 0) {
         $error = "Email already exist";
-        header("location:../?error=$error");
+        header("location:../public/?error=$error");
     } else {
         $sql = $pdo->prepare("INSERT INTO users_db.users (fullName,username,email,password) VALUES(:fullName,:username,:email,:password)");
 
@@ -56,6 +56,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $sql->bindValue(":email", $email);
         $sql->bindValue(":password", $password);
         $sql->execute();
-        header("location:../login-page.php");
+        header("location:../public/login-page.php");
     }
 }

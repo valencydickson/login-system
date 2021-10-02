@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = test_input($_POST["password"]);
 
 
-    //check if username or email and password are correct
+    //check if (username or email) and password are correct
     $userHandler = $pdo->prepare("SELECT * FROM users_db.users WHERE username=:username");
     $userHandler->bindValue(":username", $username);
     $userHandler->execute();
@@ -35,9 +35,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         session_start();
         $_SESSION["fullName"] = $userHandler["fullName"];
         $_SESSION["username"] = $userHandler["username"];
-        header("location:../profile.php");
+        header("location:../public/profile.php");
     } else {
         $error = "Username or password is incorrect";
-        header("location:../login-page.php?error=$error");
+        header("location:../public/login-page.php?error=$error");
     }
 }
