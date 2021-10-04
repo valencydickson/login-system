@@ -1,0 +1,10 @@
+{
+    "name": "samsung/login_system",
+    "authors": [
+        {
+            "name": "valencydickson",
+            "email": "dickson.valency@gmail.com"
+        }
+    ],
+    "require": {}
+}
