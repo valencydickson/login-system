@@ -20,6 +20,8 @@ session_start();
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/51416ae4aa.js" crossorigin="anonymous"></script>
 
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
     <!-- BOOTSTRAP -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">

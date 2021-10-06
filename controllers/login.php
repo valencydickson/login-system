@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . "../../views/database.php";
+require_once "../views/database.php";
 
 $username = $email = $password = "";
 

@@ -3,7 +3,7 @@ require_once "partial/header.php";
 
 ?>
 
-<main class="register-wrapper">
+<main class="login-wrapper">
 
     <div class="hero-wrapper">
         <h1 class="heading"><a href="login-page.php"><span><i class="fas fa-sign-in-alt"></i></span>Login System</a></h1>
@@ -18,7 +18,6 @@ require_once "partial/header.php";
 
         </div>
     </div>
-
 
     <div class="form-wrapper">
 
@@ -54,4 +53,4 @@ require_once "partial/header.php";
     </div>
 </main>
 
-<?php require_once __DIR__ . "partial/footer.php";
+<?php require_once "partial/footer.php";

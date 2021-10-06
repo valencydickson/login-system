@@ -1,5 +1,6 @@
 <?php
-require_once __DIR__ . "/partial/header.php";
+require_once "partial/header.php";
+
 ?>
 
 <main class="register-wrapper">
@@ -63,4 +64,4 @@ require_once __DIR__ . "/partial/header.php";
     </div>
 </main>
 
-<?php require_once __DIR__ . "/partial/footer.php";
+<?php require_once "partial/footer.php";

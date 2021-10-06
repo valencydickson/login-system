@@ -19,4 +19,4 @@ if ($_SESSION['username']) {
 }
 ?>
 
-<?php require_once __DIR__ . "partial/footer.php";
+<?php require_once "partial/footer.php";
